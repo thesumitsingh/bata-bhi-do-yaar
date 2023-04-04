@@ -4,82 +4,82 @@ import './App.css';
 function App() {
   const data = {
     1: {
-      message: "Kaisi thi date yaar bata do",
-      submessage: "Thoda feedback to de hi do",
+      message: "What do you think about my profile?",
+      submessage: "Hope you'll atleast give some feedback",
       left: "meh!",
-      right: "theek thaak",
+      right: "it's acceptable",
       leftid: 1.5,
       rightid: 3
     },
     1.5: {
-      message: "Thoda boring to hoon hi mai",
+      message: "I could have been better",
       submessage: "I know",
-      left: "To interesting bano thoda",
-      right: "Jab pata hai to kyon poocha",
+      left: "Then try to improve yourself",
+      right: "If you know, then why are you asking",
       leftid: 1.6,
       rightid: 1.6
     },
     1.6: {
-      message: "Thoda specific me batao kya improve karoon",
-      submessage: "Pehli baar date pe gaya tha. Kuchh to gadbad hona hi tha.",
-      left: "Nahi bataungi",
-      right: "Mai bahut busy hoon",
+      message: "Can you please tell me in detail",
+      submessage: "I'm really excited for this job.",
+      left: "Won't tell",
+      right: "I'm too busy",
       leftid: 2,
       rightid: 2
     },
     2: {
-      message: "Chalo theek hai",
-      submessage: "Aage badhte hain",
+      message: "It's okay, I mean I can't pressurise you",
+      submessage: "Let's move ahead",
       left: "Okay",
       right: "Ufff! okay",
       leftid: 5,
       rightid: 5
     },
     3: {
-      message: "Tab phir ghost kyon kar diya",
+      message: "Then why aren't you picking me for this job!!",
       submessage: "",
-      left: "Maine kab kiya",
-      right: "Tum boring ho",
+      left: "I haven't even rejected yet",
+      right: "You're really bad",
       leftid: 4,
       rightid: 5
     },
     4: {
-      message: "Mere message ka reply nahi kiya",
-      submessage: "Insta pe upar wala message dekho",
-      left: "Oh achha",
-      right: "Are mai busy thi",
+      message: "You haven't mailed me yet.",
+      submessage: "What's stopping you from sending me a 'Join Us PLEASE!!' mail?",
+      left: "I will bro",
+      right: "Dude are you kidding me?",
       leftid: 4.5,
       rightid: 4.5
     },
     4.5: {
-      message: "Insta story daalne ke liye time tha",
-      submessage: "Haan dekh liya maine flight wala status",
+      message: "You have gotten quite far",
+      submessage: "Most potential employers don't even spend a few seconds on a candidate",
       left: "Shut up",
-      right: "Tumhare message ke liye time nahi tha",
+      right: "I don't have time for this",
       leftid: 2,
       rightid: 2
     },
     5: {
-      message: "Ek chance aur milega?",
+      message: "Would you give me a chance to prove myself?",
       submessage: "",
-      left: "Only if you take me to a bar/club",
-      right: "Bhaad me ja",
+      left: "Only if you pass the interview",
+      right: "Go to hell",
       leftid: 0.1,
       rightid: 2
     },
     0.1: {
-      message: "Nashe karne hain?",
-      submessage: "",
+      message: "Soooo????",
+      submessage: "Should we fix an interview?",
       left: "Yes",
       right: "Hell yes!",
       leftid: 0,
       rightid: 0
     },
     0: {
-      message: "WhatsApp pe connect karen?",
+      message: "Let's connect on mail?",
       submessage: "",
       left: "Yes",
-      right: "Are yaar! chalo theek hai",
+      right: "Ummm, okay",
       leftid: "whatsapp",
       rightid: "whatsapp",
       whatsapptext: "desperate ladkon wali harkate kar rahe ho"
@@ -104,8 +104,8 @@ function App() {
         <div class="button__group">
           {data[id].leftid === "whatsapp" ?
             <>
-              <a href={"https://wa.me/918291474891?text=desperare ladkon wali harkate kar rahe ho"}><button id="left">{data[id].left}</button></a>
-              <a href={"https://wa.me/918291474891?text=dobara pareshan kiya to block kar dungi"}><button id="right">{data[id].right}</button></a>
+              <a href={"mailto:thesumitsingh@gmail.com?subject=Your resume won my heart"}><button id="left">{data[id].left}</button></a>
+              <a href={"mailto:thesumitsingh@gmail.com?subject=Your resume won my heart"}><button id="right">{data[id].right}</button></a>
             </>
 
             :
